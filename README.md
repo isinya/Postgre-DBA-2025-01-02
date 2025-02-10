@@ -31,7 +31,11 @@ otus=> show transaction isolation level;
 в первой сессии добавить новую запись
 insert into persons(first_name, second_name) values('sergey', 'sergeev');
    ```sh
-   otus=> Begin;    
+   otus=> begin;
+BEGIN     
+otus=*> insert into persons(first_name, second_name) values('sergey', 'sergeev');     
+INSERT 0 1     
+otus=*>     
    ```
 
 [Текст ссылки](https://htmlacademy.ru)
