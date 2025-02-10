@@ -22,7 +22,7 @@ otus=*> commit;
 COMMIT    
 otus=>    
 otus=> show transaction isolation level;    
- transaction_isolation    
+ *transaction_isolation*    
 -----------------------    
  read committed    
 (1 строка)    
