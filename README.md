@@ -8,8 +8,19 @@ create table persons(id serial, first_name text, second_name text);\
 insert into persons(first_name, second_name) values('ivan', 'ivanov');\
 insert into persons(first_name, second_name) values('petr', 'petrov');\
 commit;    
-
-Посмотреть текущий уровень изоляции: show transaction isolation level
+Посмотреть текущий уровень изоляции: show transaction isolation level   
+<div class="boxed">
+Begin;
+create table persons(id serial, first_name text, second_name text); 
+insert into persons(first_name, second_name) values('ivan', 'ivanov'); 
+insert into persons(first_name, second_name) values('petr', 'petrov'); 
+commit;
+otus=> show transaction isolation level;
+ transaction_isolation
+-----------------------
+ read committed
+  
+</div>
 
 
 [Текст ссылки](https://htmlacademy.ru)
