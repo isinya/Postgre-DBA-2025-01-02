@@ -37,5 +37,7 @@ otus=*> insert into persons(first_name, second_name) values('sergey', 'sergeev')
 INSERT 0 1     
 otus=*>     
    ```
+>сделать select from persons во второй сессии
+видите ли вы новую запись и если да то почему?
 
 [Текст ссылки](https://htmlacademy.ru)
