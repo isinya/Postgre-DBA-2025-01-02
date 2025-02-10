@@ -27,4 +27,11 @@ otus=> show transaction isolation level;
  read committed    
 (1 строка)    
    ```
+>начать новую транзакцию в обоих сессиях с дефолтным (не меняя) уровнем изоляции    
+в первой сессии добавить новую запись
+insert into persons(first_name, second_name) values('sergey', 'sergeev');
+   ```sh
+   otus=> Begin;    
+   ```
+
 [Текст ссылки](https://htmlacademy.ru)
