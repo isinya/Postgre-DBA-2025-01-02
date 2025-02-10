@@ -9,5 +9,7 @@ insert into persons(first_name, second_name) values('ivan', 'ivanov');\
 insert into persons(first_name, second_name) values('petr', 'petrov');\
 commit;    
 Посмотреть текущий уровень изоляции: show transaction isolation level   
-
+   ```sh
+   pg_dump -v -Fd -f <folder_name>/<dump>/ --username "postgres" musson
+   ```
 [Текст ссылки](https://htmlacademy.ru)
